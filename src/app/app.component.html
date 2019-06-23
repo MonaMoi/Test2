@@ -1,6 +1,7 @@
 <div *ngFor="let course of courses">
   <h3>{{ course.title }}</h3>
   ID: {{ course.id }}
+  Link zum Kurs: <a href="https://hochschulsport-koeln.de/node/{{ course.id }}">https://hochschulsport-koeln.de/node/{{ course.id }}</a>
   <p [innerHTML]="course.description"></p>
 </div>
 
