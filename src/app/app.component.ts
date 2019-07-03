@@ -10,17 +10,23 @@ export class AppComponent implements OnInit {
 
   title = 'HSPzwonull';
 
-  public courses;
+  public news;
+  public topcourses;
 
   constructor(private http: HttpClient) {
   }
 
   ngOnInit() {
 
-    this.http.get('https://hochschulsport-koeln.de/json/courses?_format=json')
+    this.http.get('https://hochschulsport-koeln.de/json/news?_format=json')
       .subscribe((data) => {
-        this.courses = data;
-        console.log(data)
+        this.news = data;
       });
+    
+    this.http.get('https://hochschulsport-koeln.de/json/topcourses?_format=json')
+      .subscribe((data) => {
+        this.topcourses = data;
+      });
+    
   }
 }
