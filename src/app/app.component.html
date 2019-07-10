@@ -1,20 +1,5 @@
-<h2>News</h2>
-<div *ngIf="news.length == 0">
-    Keine neuen Nachrichten vorhanden.
-</div>
-<div *ngIf="news.length > 0">
-  <div *ngFor="let newsentry of news">
-    {{ newsentry.title }}
-  </div>
-</div>
-
-<div *ngIf="topcourses.length > 0">
-  <h2>Topkurse</h2>
-  <div *ngFor="let course of topcourses">
-    <h3>{{ course.title }}</h3>
-    ID: {{ course.nid }}
-    <p [innerHTML]="course.body"></p>
-  </div>
-</div>
+<nav id="main-navigation">
+  <a routerLink="/overview-categories">Übersichtsseite Kategorien</a>
+</nav>
 
 <router-outlet></router-outlet>

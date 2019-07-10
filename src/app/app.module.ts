@@ -11,6 +11,7 @@ import { OverviewKategoriesComponent } from './components/overview-kategories/ov
 import { OverviewKurseComponent } from './components/overview-kurse/overview-kurse.component';
 import { OverviewWeekComponent } from './components/overview-week/overview-week.component';
 import { OverviewKurseamwochentagComponent } from './components/overview-kurseamwochentag/overview-kurseamwochentag.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { OverviewKurseamwochentagComponent } from './components/overview-kurseam
     OverviewKategoriesComponent,
     OverviewKurseComponent,
     OverviewWeekComponent,
-    OverviewKurseamwochentagComponent
+    OverviewKurseamwochentagComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
